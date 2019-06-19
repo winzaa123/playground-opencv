@@ -1,0 +1,9 @@
+version: "3"
+services:
+  pythonPL:
+    stdin_open: true
+    tty: true
+    # image: jjanzic/docker-python3-opencv
+    image: nuveo/opencv:debian-python3-opencv2
+    volumes: 
+      - ./mnt:/mnt
