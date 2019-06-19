@@ -4,6 +4,7 @@ services:
     stdin_open: true
     tty: true
     # image: jjanzic/docker-python3-opencv
-    image: nuveo/opencv:debian-python3-opencv2
+    # image: nuveo/opencv:debian-python3-opencv2
+    image: tensorflow/tensorflow:2.0.0b1-py3 
     volumes: 
       - ./mnt:/mnt
