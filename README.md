@@ -27,3 +27,8 @@ pip install matplotlib
 wget https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip -->
 
 cp -r pycocotools ~/tensorflow/models/research/
+
+# Image
+
+- [Jupyter]( https://towardsdatascience.com/tensorflow-object-detection-with-docker-from-scratch-5e015b639b0b)
+- [Tensorflow Deploy](https://medium.com/@pierrepaci/deploy-tensorflow-object-detection-model-in-less-than-5-minutes-604e6bb0bb04)
