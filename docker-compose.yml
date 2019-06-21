@@ -1,17 +1,22 @@
 version: "3"
 services:
-  pythonPL:
-    stdin_open: true
+  object-detect-app:
+    stdin_open: true # for image interactive
     tty: true
+    build: 
+      context: ./mnt/object-detection
+      dockerfile: Dockerfile
     # image: jjanzic/docker-python3-opencv
     # image: nuveo/opencv:debian-python3-opencv2
-    image: tensorflow/tensorflow:2.0.0b1-py3 
+    # image: tensorflow/tensorflow:2.0.0b1-py3 
+    ports: 
+      - 8888:8888
+      - 6006:6006
     volumes: 
       - ./mnt:/mnt
   # object-detect: ## serve API
   #   # stdin_open: true # for image interactive
-  #   # tty: true # for image interactive
-  #   # image: jjanzic/docker-python3-opencv
+  #   # tty: true # for image interactive 1 1           #   # image: jjanzic/docker-python3-opencv
   #   # image: nuveo/opencv:debian-python3-opencv2
   #   build: 
   #     context: ./

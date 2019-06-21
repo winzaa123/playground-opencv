@@ -32,3 +32,13 @@ cp -r pycocotools ~/tensorflow/models/research/
 
 - [Jupyter]( https://towardsdatascience.com/tensorflow-object-detection-with-docker-from-scratch-5e015b639b0b)
 - [Tensorflow Deploy](https://medium.com/@pierrepaci/deploy-tensorflow-object-detection-model-in-less-than-5-minutes-604e6bb0bb04)
+
+# Image Realtime
+
+- [Real-time image Github](https://github.com/datitran/object_detector_app)
+- https://github.com/SethHWeidman/docker-object-detection
+- https://github.com/aiformankind/object-detection
+
+object detection Required !!
+apt-get install -y git curl unzip
+ENV DEBIAN_FRONTEND noninteractive 
