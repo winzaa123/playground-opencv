@@ -20,13 +20,23 @@ source ~/tensorflow/bin/activate
 
 # object detection
 
-https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
-<!-- apt-get install protobuf-compiler python-pil python-lxml
-pip install jupyter
-pip install matplotlib
-wget https://github.com/google/protobuf/releases/download/v3.3.0/protoc-3.3.0-linux-x86_64.zip -->
+https://medium.com/@karol_majek/10-simple-steps-to-tensorflow-object-detection-api-aa2e9b96dc94
 
-cp -r pycocotools ~/tensorflow/models/research/
+to
+
+https://github.com/winzaa123/ml-jupyter-python3
+```md
+
+apt-get update && apt-get install -y protobuf-compiler python-pil python-lxml python-tk
+
+pip install --no-cache-dir Cython contextlib2
+
+cp -r pycocotools /notebooks/tensorflow/models
+
+cd /notebooks/tensorflow/models/research
+
+protoc object_detection/protos/*.proto --python_out=.
+```
 
 # Image
 

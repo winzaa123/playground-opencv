@@ -5,7 +5,7 @@ services:
     tty: true
     build: 
       # context: ./mnt/object-detection 
-      context: ./mnt/ml-jupyter-python3 #  https://github.com/asashiho/ml-jupyter-python3
+      context: ./mnt/ml-jupyter-python3 #  https://github.com/winzaa123/ml-jupyter-python3
       dockerfile: Dockerfile
     # image: jjanzic/docker-python3-opencv
     # image: nuveo/opencv:debian-python3-opencv2
