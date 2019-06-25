@@ -1,10 +1,11 @@
 version: "3"
 services:
-  object-detect-app:
+  jupyter-python3:
     stdin_open: true # for image interactive
     tty: true
     build: 
-      context: ./mnt/object-detection
+      # context: ./mnt/object-detection 
+      context: ./mnt/ml-jupyter-python3 #  https://github.com/asashiho/ml-jupyter-python3
       dockerfile: Dockerfile
     # image: jjanzic/docker-python3-opencv
     # image: nuveo/opencv:debian-python3-opencv2
@@ -13,12 +14,8 @@ services:
       - 8888:8888
       - 6006:6006
     volumes: 
-      - ./mnt:/mnt
-    # deploy: # CPU overload too.
-    #   resources:
-    #     limits:
-    #       cpus: "0.30"
-          # memory: "50M"
+      # - ./mnt:/mnt
+      - ./mnt/data:/notebooks
   # object-detect: ## serve API
   #   # stdin_open: true # for image interactive
   #   # tty: true # for image interactive 1 1           #   # image: jjanzic/docker-python3-opencv

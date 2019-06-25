@@ -1,3 +1,4 @@
 mnt/*
 
 !mnt/tutorials
+!mnt/data
