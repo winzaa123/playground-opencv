@@ -14,6 +14,11 @@ services:
       - 6006:6006
     volumes: 
       - ./mnt:/mnt
+    # deploy: # CPU overload too.
+    #   resources:
+    #     limits:
+    #       cpus: "0.30"
+          # memory: "50M"
   # object-detect: ## serve API
   #   # stdin_open: true # for image interactive
   #   # tty: true # for image interactive 1 1           #   # image: jjanzic/docker-python3-opencv
