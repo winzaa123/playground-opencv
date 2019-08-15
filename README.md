@@ -52,3 +52,9 @@ protoc object_detection/protos/*.proto --python_out=.
 object detection Required !!
 apt-get install -y git curl unzip
 ENV DEBIAN_FRONTEND noninteractive 
+
+## Document
+
+- [Python Tips](http://book.pythontips.com/en/latest/index.html)
+- [Overview Object Detection](https://medium.com/nanonets/how-to-easily-detect-objects-with-deep-learning-on-raspberrypi-225f29635c74)
+- [CV Example](https://yoyoinwanderland.github.io/CV-Applications/)
